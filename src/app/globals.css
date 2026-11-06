@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-midnight: #030407;
+  --color-cobalt: #1558c9;
+  --color-acid: #c5ea32;
+  --color-cream: #e8d2b5;
+  --color-sage: #a5a79b;
+  --color-burgundy: #590907;
+  --color-canvas: #f7f8ef;
+  --color-ink: #151710;
+  --color-muted: #73766c;
+  --color-line: #e7e9dc;
+}
+
+:root {
+  --midnight: #030407;
+  --cobalt: #1558c9;
+  --acid: #c5ea32;
+  --sage: #a5a79b;
+  --cream: #e8d2b5;
+  --burgundy: #590907;
+  --canvas: #f7f8ef;
+  --ink: #151710;
+  --muted: #73766c;
+  --line: #e7e9dc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans), "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--midnight);
+}
